@@ -1,0 +1,34 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+struct panel {
+char asciForm[11][32] ={
+	{"`                        "},
+	{"`                        "},
+	{"`          vi           "},
+	{"` q -quit             "},
+	{"` e-edit              "},
+	{"                          "},
+		{"                          "},
+			{"                          "},
+				{"                          "},
+					{"                          "},
+						{"                          "}
+};
+void printForm() {
+	for (int i=0; i<11; i++)
+	if (i!=2)
+	cout << asciForm[i]<< endl << endl;
+	else {
+	}
+}
+};
+int main() {
+	cout<<"hello lenowo"<<endl;
+	panel *p;
+	p->printForm();
+	
+	asm (".L0: .word= 0x0f00f00 \n");
+	asm ("bl .L0 \n");
+	return 0;
+}
